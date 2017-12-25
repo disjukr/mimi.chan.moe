@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "미미짱 모에",
+    "short_name": "미미추",
+    "version": "0.0.0",
+    "description": "팝픈뮤직 이어뮤 게이트 사용을 도와주는 친구",
+    "icons": {
+        "128": "icon.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "32": "icon32.png"
+        },
+        "default_popup": "index.html",
+        "default_title": "미미추"
+    },
+    "externally_connectable": {
+        "matches": [
+            "*://mimi.chan.moe/*"
+        ]
+    },
+    "homepage_url": "http://mimi.chan.moe",
+    "incognito": "split",
+    "minimum_chrome_version": "63",
+    "offline_enabled": false,
+    "permissions": [
+        "tabs",
+        "storage"
+    ]
+}
