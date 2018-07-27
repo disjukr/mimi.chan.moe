@@ -1,0 +1,30 @@
+{
+  "name": "mimi.chan.moe-website",
+  "description": "mimi.chan.moe website",
+  "version": "0.0.0",
+  "author": "JongChan Choi <jong@chan.moe>",
+  "scripts": {
+    "build": "npm run ts-node `npm bin`/gatsby build",
+    "dev": "npm run ts-node `npm bin`/gatsby develop",
+    "ts-node": "ts-node -O '{\"module\": \"commonjs\"}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "private": true,
+  "dependencies": {
+    "@types/react": "^16.4.7",
+    "@types/react-dom": "^16.0.6",
+    "@types/react-helmet": "^5.0.6",
+    "gatsby": "^1.9.277",
+    "gatsby-link": "^1.6.46",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-sass": "^1.0.26",
+    "gatsby-plugin-typescript": "^1.4.20",
+    "node-sass": "^4.9.2",
+    "react-helmet": "^5.2.0",
+    "ts-node": "^7.0.0",
+    "typescript": "^2.9.2"
+  }
+}
