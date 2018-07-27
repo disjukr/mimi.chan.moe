@@ -1,0 +1,3 @@
+- `options.html`: 주 화면
+- `browser_action.html`: 우측 상단 버튼 누르면 나오는 작은 화면
+- `background.js`: 플러그인 전체 상태를 들고있는 녀석

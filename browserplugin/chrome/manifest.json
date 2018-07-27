@@ -7,12 +7,17 @@
     "icons": {
         "128": "icon.png"
     },
+    "options_page": "options.html",
     "browser_action": {
         "default_icon": {
             "32": "icon32.png"
         },
-        "default_popup": "index.html",
+        "default_popup": "browser_action.html",
         "default_title": "미미추"
+    },
+    "background": {
+        "scripts": ["src/background.js"],
+        "persistent": true
     },
     "externally_connectable": {
         "matches": [
@@ -24,7 +29,9 @@
     "minimum_chrome_version": "63",
     "offline_enabled": false,
     "permissions": [
+        "storage",
         "tabs",
-        "storage"
+        "http://p.eagate.573.jp/*",
+        "https://p.eagate.573.jp/*"
     ]
 }
