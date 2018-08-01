@@ -4,9 +4,8 @@
   "version": "0.0.0",
   "author": "JongChan Choi <jong@chan.moe>",
   "scripts": {
-    "build": "npm run ts-node `npm bin`/gatsby build",
-    "dev": "npm run ts-node `npm bin`/gatsby develop",
-    "ts-node": "ts-node -O '{\"module\": \"commonjs\"}'"
+    "build": "ts-node ./node_modules/gatsby/dist/bin/gatsby.js build",
+    "dev": "ts-node ./node_modules/gatsby/dist/bin/gatsby.js develop"
   },
   "repository": {
     "type": "git",
@@ -19,12 +18,14 @@
     "@types/react-dom": "^16.0.6",
     "@types/react-helmet": "^5.0.6",
     "classnames": "^2.2.6",
-    "gatsby": "^1.9.277",
-    "gatsby-link": "^1.6.46",
-    "gatsby-plugin-react-helmet": "^2.0.11",
-    "gatsby-plugin-sass": "^1.0.26",
-    "gatsby-plugin-typescript": "^1.4.20",
+    "gatsby": "^2.0.0-beta.65",
+    "gatsby-link": "^2.0.0-beta.6",
+    "gatsby-plugin-react-helmet": "^3.0.0-beta.4",
+    "gatsby-plugin-sass": "^2.0.0-beta.6",
+    "gatsby-plugin-typescript": "^2.0.0-beta.9",
     "node-sass": "^4.9.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0",
     "ts-node": "^7.0.0",
     "typescript": "^2.9.2"
