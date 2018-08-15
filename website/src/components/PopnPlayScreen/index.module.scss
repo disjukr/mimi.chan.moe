@@ -1,0 +1,84 @@
+.popn-play-screen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    width: 1280px;
+    height: 720px;
+    font-family: 'Noto Sans Japanese', sans-serif;
+    color: #fff;
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 500px;
+        background: linear-gradient(to right, transparent, #000 3%, #000 97%, transparent 100%);
+        .title-bar {
+            height: 60px;
+            .title-text {
+                margin-top: 18px;
+                transform: scaleX(1.3);
+                letter-spacing: -1.2px;
+                text-align: center;
+                font-size: 22px;
+                color: #fff;
+            }
+        }
+        .lanes {
+            display: flex;
+            flex-direction: row;
+            margin: 0 20px;
+            width: 460px;
+            height: 535px;
+            .lane {
+                flex-grow: 5;
+                margin: 0 1px;
+                &:first-child { margin-left: 0; }
+                &:last-child { margin-right: 0; }
+                &:nth-child(odd) { flex-grow: 6; }
+                &.white { background-color: #3B3B3B; }
+                &.yellow { background-color: #4A3D0E; }
+                &.green { background-color: #10451F; }
+                &.blue { background-color: #173E4B; }
+                &.red { background-color: #5B081B; }
+            }
+        }
+        .judgement-line {
+            margin: 0 20px;
+            margin-top: -55px;
+            width: 460px;
+            height: 10px;
+            background-image: linear-gradient(
+                to bottom,
+                transparent 0%,
+                #f00 40%,
+                #f00 60%,
+                transparent 100%
+            );
+            .glow-line {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100%;
+                height: 5px;
+                background-image: linear-gradient(
+                    to bottom,
+                    transparent 0%,
+                    #f88 40%,
+                    #f88 60%,
+                    transparent 100%
+                );
+                animation: judgement-line-blink 1.5s ease-in-out infinite;
+            }
+        }
+    }
+}
+
+@keyframes judgement-line-blink {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}

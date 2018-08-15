@@ -1,7 +1,7 @@
 import * as React from 'react';
 import classNames from 'classnames';
 
-import * as styles from './index.scss';
+import * as styles from './index.module.scss';
 
 class PopnPlayScreen extends React.Component {
     render() {
@@ -20,6 +20,9 @@ class PopnPlayScreen extends React.Component {
                     <div className={classNames(styles.lane, styles.green)}/>
                     <div className={classNames(styles.lane, styles.yellow)}/>
                     <div className={classNames(styles.lane, styles.white)}/>
+                </div>
+                <div className={styles.judgementLine}>
+                    <div className={styles.glowLine}/>
                 </div>
             </div>
         </div>;

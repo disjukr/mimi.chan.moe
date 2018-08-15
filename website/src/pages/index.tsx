@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import * as styles from './index.scss';
+import * as styles from './index.module.scss';
 import Layout from '../components/Layout';
 import PopnPlayScreen from '../components/PopnPlayScreen';
 
